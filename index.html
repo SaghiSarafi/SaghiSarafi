@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation Bar -->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">Saghi's Website</a>
@@ -19,17 +20,20 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a class="nav-link" href="mywebapp.html">My WebApp</a></li>
+                    <li class="nav-item"><a class="nav-link" href="documents/Saghi_CV.pdf" target="_blank">CV</a></li> 
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- About Me Section -->
     <section id="about" class="container mt-5 pt-5">
         <h2>About Me</h2>
         <p>Welcome to my personal website! I am a spatial data analyst passionate about remote sensing and urban sustainability.</p>
-        <p><a href="documents/Saghi_CV.pdf" target="_blank">View My CV (PDF)</a></p>
+        <p><a href="documents/Saghi_CV.pdf" target="_blank" class="btn btn-primary">View My CV (PDF)</a></p>
     </section>
 
+    <!-- Portfolio Section -->
     <section id="portfolio" class="container mt-5">
         <h2>Portfolio</h2>
         <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
@@ -49,6 +53,13 @@
             </button>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Saghi Sarafi. All rights reserved. | 
+            <a href="documents/Saghi_CV.pdf" target="_blank" class="text-white">View My CV</a>
+        </p>
+    </footer>
 
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
