@@ -1,73 +1,72 @@
-/* General Styles */
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    margin: 0;
+    padding-top: 56px;
 }
 
-/* Navbar Styling */
+/* Navbar */
 .navbar {
-    background: linear-gradient(to right, #ff6f61, #de425b);
+    background: linear-gradient(to right, #0073e6, #00aaff);
 }
 .navbar-brand {
     font-weight: bold;
-    font-size: 1.5rem;
-    color: white !important;
 }
 .navbar-nav .nav-link {
     color: white !important;
-    font-size: 1.1rem;
-    padding: 10px 15px;
+    transition: color 0.3s;
 }
 .navbar-nav .nav-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
+    color: #ffcc00 !important;
 }
 
-/* Section Styling */
+/* Hero Section */
+#home {
+    background: url('../images/hero-bg.jpg') center/cover no-repeat;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+#home h2 {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Sections */
 section {
-    padding: 60px 20px;
-    border-radius: 8px;
-    margin-bottom: 30px;
+    padding: 60px 0;
     background: white;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
-
-/* Section Headers */
 h2 {
-    color: #de425b;
-    border-bottom: 3px solid #ff6f61;
+    color: #0073e6;
+    border-bottom: 3px solid #00aaff;
     padding-bottom: 10px;
     display: inline-block;
 }
 
-/* Link Styling */
+/* Links & Buttons */
 a {
-    color: #ff6f61;
+    color: #0073e6;
     text-decoration: none;
-    font-weight: bold;
 }
 a:hover {
-    color: #de425b;
+    color: #005bb5;
     text-decoration: underline;
 }
 
-/* Footer Styling */
+/* Footer */
 footer {
-    background: #de425b;
+    background-color: #0073e6;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0;
     margin-top: 30px;
-    font-size: 1rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
-    section {
-        padding: 40px 15px;
-    }
 }
