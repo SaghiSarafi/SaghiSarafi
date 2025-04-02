@@ -7,12 +7,24 @@ body {
     padding-top: 56px;
 }
 
+
+
+
 /* Navbar */
 .navbar {
     background: linear-gradient(to right, #0073e6, #00aaff);
 }
 .navbar-brand {
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navbar-subtitle {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #f8f9fa; /* Adjust color to fit the navbar theme */
+    display: block;
+    text-align: center;
 }
 .navbar-nav .nav-link {
     color: white !important;
