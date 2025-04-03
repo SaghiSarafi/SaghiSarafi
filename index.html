@@ -9,34 +9,88 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbarNav">
+
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><strong>Saghi Sarafi</strong></a>
+            <a class="navbar-brand" href="#">Saghi Sarafi</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
-                    <li class="nav-item"><a class="nav-link" href="webapp.html">My Web App</a></li>
-                    <li class="nav-item"><a class="nav-link" href="research.html">Research Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="personal.html">Personal Interests</a></li>
-                    <li class="nav-item"><a class="nav-link" href="linkedin.html">LinkedIn Profile</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cv">Curriculum Vitae</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#webapp">My Web App</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#personal">Personal Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#linkedin">LinkedIn Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
+    <!-- Main Content Sections -->
     <div class="container mt-5 pt-5">
-        <h1>Welcome to Saghi's Website</h1>
-        <p>Select a section from the navigation menu.</p>
+
+        <!-- Home Section -->
+        <section id="home" class="mt-5">
+            <h2>Home</h2>
+            <img src="images/saghi.jpg" alt="Saghi Sarafi" class="img-fluid" width="1200" height="250">
+            <p>Welcome to my website! Here, you'll find details about my academic work, projects, and interests.</p>
+            <hr>
+        </section>
+
+        <!-- Curriculum Vitae -->
+        <section id="cv" class="mt-5">
+            <h2>Curriculum Vitae</h2>
+            <p>Download my CV <a href="Documents/Saghi_CV.pdf" target="_blank">HERE</a>.</p>
+            <hr>
+        </section>
+
+        <!-- My Web App -->
+        <section id="webapp" class="mt-5">
+            <h2>My Web App</h2>
+            <p>Check out my web application <a href="MyWebApp/" target="_blank">HERE</a>.</p>
+            <hr>
+        </section>
+
+        <!-- Research Interests -->
+        <section id="research" class="mt-5">
+            <h2>Research Interests</h2>
+            <p>My research focuses on geospatial analysis, remote sensing, and urban sustainability.</p>
+            <hr>
+        </section>
+
+        <!-- Personal Interests -->
+        <section id="personal" class="mt-5">
+            <h2>Personal Interests</h2>
+            <p>I enjoy hiking, photography, and listening to Queen.</p>
+            <hr>
+        </section>
+
+        <!-- LinkedIn Profile -->
+        <section id="linkedin" class="mt-5">
+            <h2>LinkedIn Profile</h2>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/saghi-sarafi-1b857b152" target="_blank">LinkedIn</a>.</p>
+            <hr>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="mt-5">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:saghi3@unm.edu">saghi3@unm.edu</a></p>
+            <hr>
+        </section>
+
     </div>
 
+    <!-- JavaScript Libraries -->
     <script src="libs/jquery/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
