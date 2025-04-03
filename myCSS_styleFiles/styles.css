@@ -21,7 +21,6 @@ body {
     font-size: 0.9rem;
     font-weight: normal;
     color: #f8f9fa;
-    /* Adjust color to fit the navbar theme */
     display: block;
     text-align: center;
 }
@@ -35,20 +34,21 @@ body {
     color: #ffcc00 !important;
 }
 
-/* Hero Section */
+/* Hero Section - Full screen background */
 #home {
     background: url('../images/hero-bg.jpg') center/cover no-repeat;
-    height: 400px;
+    height: 100vh; /* Full viewport height */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    background-attachment: fixed; /* Optional: makes the background image fixed during scrolling */
 }
 
-#home h2 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+/* Optional: Add some margin to the main content so it's below the fixed navbar */
+body {
+    margin-top: 70px; /* Adjust this according to your navbar height */
 }
 
 /* Sections */
