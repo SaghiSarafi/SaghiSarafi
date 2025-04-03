@@ -31,13 +31,14 @@ body {
 /* Hero Section (Background Image and Overlay) */
 .hero-container {
     position: relative;
-    background: url('/Users/saghisarafi/Geography_UNM/Web_Maping_Lab/Personal_website/Saghi-Sarafi/images/Iran.JPG') center/cover no-repeat;
+    background: url('images/Iran.JPG') center/cover no-repeat;
     height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
 }
+
 
 .hero-overlay {
     position: absolute;
