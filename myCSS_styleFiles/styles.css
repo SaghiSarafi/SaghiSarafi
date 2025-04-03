@@ -9,53 +9,50 @@ body {
 
 /* Navbar */
 .navbar {
-    background: linear-gradient(to right, #0073e6, #00aaff);
+    background: linear-gradient(to right, #343a40, #495057);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
-}
-
-.navbar-subtitle {
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: #f8f9fa;
-    display: block;
-    text-align: center;
 }
 
 .navbar-nav .nav-link {
     color: white !important;
-    transition: color 0.3s;
+    transition: color 0.3s ease-in-out;
+    font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link:hover {
     color: #ffcc00 !important;
 }
 
+/* Home Section */
 #home {
     background: url('../images/hero-bg.jpg') center/cover no-repeat;
-    height: 400px;
+    height: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    border-radius: 8px;
 }
 
-#home h2 {
-    font-size: 2.5rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#home h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
 /* Sections */
 section {
     padding: 60px 0;
     background: white;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 h2 {
@@ -63,24 +60,40 @@ h2 {
     border-bottom: 3px solid #00aaff;
     padding-bottom: 10px;
     display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 /* Links & Buttons */
 a {
     color: #0073e6;
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 a:hover {
-    color: #0073e6;
+    color: #005bb5;
     text-decoration: underline;
+}
+
+/* Carousel */
+.carousel-inner img {
+    border-radius: 8px;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%);
 }
 
 /* Footer */
 footer {
-    background-color: #0073e6;
+    background-color: #343a40;
     color: white;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 30px;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 1rem;
 }
