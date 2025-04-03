@@ -31,7 +31,7 @@ body {
 /* Hero Section (Background Image and Overlay) */
 .hero-container {
     position: relative;
-    background: url('images/Iran.JPG') center/cover no-repeat;
+    background: url('images/Iran.jpg') center/cover no-repeat;
     height: 450px;
     display: flex;
     align-items: center;
