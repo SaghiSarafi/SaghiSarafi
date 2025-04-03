@@ -43,7 +43,17 @@ body {
     justify-content: center;
     text-align: center;
     color: white;
-    background-attachment: fixed; /* Optional: makes the background image fixed during scrolling */
+    position: relative; /* Ensure positioning context for absolute child */
+}
+
+/* Text on top of the image */
+#home .welcome-text {
+    position: absolute; /* Position text absolutely inside the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of width/height to perfectly center */
+    font-size: 2rem; /* Adjust font size as needed */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: add shadow for text readability */
 }
 
 /* Optional: Add some margin to the main content so it's below the fixed navbar */
