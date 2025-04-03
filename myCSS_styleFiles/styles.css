@@ -32,18 +32,17 @@ body {
 /* Banner Image Styling */
 .banner-img {
     width: 100%;
-    height: auto;
+    height: 400px;
     display: block;
     object-fit: cover;
-    position: relative;
-    top: 0;
+    margin-bottom: 20px;
 }
 
 /* Main Section (Hero Section) */
 #home {
-    padding: 80px 0; /* Adds padding to the section */
     text-align: center;
     color: #fff;
+    padding-top: 20px;
 }
 
 #home h1 {
