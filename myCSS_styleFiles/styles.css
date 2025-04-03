@@ -4,7 +4,7 @@ body {
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
-    padding-top: 56px;
+    padding-top: 56px; /* To avoid content being hidden under the fixed navbar */
 }
 
 /* Navbar */
@@ -16,6 +16,7 @@ body {
 .navbar-brand {
     font-size: 1.7rem;
     font-weight: bold;
+    color: #fff;
 }
 
 .navbar-nav .nav-link {
@@ -28,44 +29,63 @@ body {
     color: #ffcc00 !important;
 }
 
-/* Hero Section (Background Image and Overlay) */
-.hero-container {
-    position: relative;
-    background: url('images/Iran.jpg') center/cover no-repeat;
-    height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
-
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Banner Image Styling */
+.banner-img {
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);  /* Dark overlay to make text readable */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    position: relative;
+    top: 0;
 }
 
-.hero-content h1 {
+/* Main Section (Hero Section) */
+#home {
+    padding: 80px 0; /* Adds padding to the section */
+    text-align: center;
+    color: #fff;
+}
+
+#home h1 {
     font-size: 3rem;
     font-weight: bold;
     text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
 }
 
-.hero-content p {
-    font-size: 1.2rem;
-    margin-top: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+#home p {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    font-weight: lighter;
 }
 
-/* Footer */
+/* Add a Gradient Overlay on Banner Image for Better Text Visibility */
+#home:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Adds a dark overlay */
+    z-index: -1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem; /* Smaller font size on mobile */
+    }
+
+    #home p {
+        font-size: 1.1rem; /* Smaller paragraph text on mobile */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Footer Styling */
 footer {
     background-color: #343a40;
     color: white;
