@@ -29,7 +29,14 @@ body {
     color: #ffcc00 !important;
 }
 
-
+/* Banner Image Styling */
+.banner-img {
+    width: 25%; /* Full width */
+    height: 50px; /* 50% of viewport height for moderate height */
+    object-fit: cover; /* Ensure it maintains aspect ratio */
+    display: block;
+    margin-bottom: 20px;
+}
 
 /* Main Section (Hero Section) */
 #home {
