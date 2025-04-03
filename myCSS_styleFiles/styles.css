@@ -31,15 +31,16 @@ body {
 
 /* Banner Image Styling */
 .banner-img {
-    width: 100%;
-    height: 400px;
+    width: 100%; /* Full width */
+    height: 50vh; /* 50% of viewport height for moderate height */
+    object-fit: cover; /* Ensure it maintains aspect ratio */
     display: block;
-    object-fit: cover;
     margin-bottom: 20px;
 }
 
 /* Main Section (Hero Section) */
 #home {
+    position: relative; /* Required for overlay */
     text-align: center;
     color: #fff;
     padding-top: 20px;
