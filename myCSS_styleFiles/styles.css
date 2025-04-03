@@ -21,7 +21,6 @@ body {
     font-size: 0.9rem;
     font-weight: normal;
     color: #f8f9fa;
-    /* Adjust color to fit the navbar theme */
     display: block;
     text-align: center;
 }
@@ -35,7 +34,6 @@ body {
     color: #ffcc00 !important;
 }
 
-/* Hero Section */
 #home {
     background: url('../images/hero-bg.jpg') center/cover no-repeat;
     height: 400px;
