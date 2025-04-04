@@ -65,7 +65,7 @@ body {
 /* Add a Gradient Overlay on Banner Image for Better Text Visibility */
 #home:before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
