@@ -5,7 +5,6 @@ body {
     color: #333;
     margin: 0;
     padding-top: 56px;
-    /* To avoid content being hidden under the fixed navbar */
 }
 
 /* Navbar */
@@ -75,7 +74,6 @@ body {
     font-weight: lighter;
 }
 
-/* Add a Gradient Overlay on Banner Image for Better Text Visibility */
 #home:before {
     content: '';
     position: relative;
@@ -84,7 +82,6 @@ body {
     width: 120%;
     height: 100%;
     background: rgb(253, 253, 253);
-    /* Adds a dark overlay */
     z-index: -1;
 }
 
