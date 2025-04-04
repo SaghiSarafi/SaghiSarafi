@@ -35,10 +35,10 @@ body {
 .banner-img {
     width: 100vw;
     height: 600px;
-    border: none;
+    display: block;
     margin: 0;
     padding: 0;
-    display: block;
+    border: none;
     position: relative;
 }
 .container,
@@ -56,6 +56,11 @@ body {
     color: rgb(22, 20, 20);
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
 }
 
 #home h1 {
