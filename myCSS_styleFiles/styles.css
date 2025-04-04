@@ -44,6 +44,7 @@ body {
     text-align: center;
     color: #fff;
     padding-top: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #home h1 {
@@ -56,6 +57,7 @@ body {
     font-size: 1.3rem;
     margin-top: 20px;
     font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Add a Gradient Overlay on Banner Image for Better Text Visibility */
