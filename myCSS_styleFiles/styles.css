@@ -43,6 +43,12 @@ body {
     margin: 0 auto;
     box-shadow: none;
 }
+.container,
+.row,
+.col {
+    margin-top: 10px !important;
+    padding-top: 0 !important;
+}
 
 
 /* Main Section (Hero Section) */
@@ -93,13 +99,6 @@ body {
 
     .navbar-nav .nav-link {
         font-size: 1rem;
-    }
-
-    .container,
-    .row,
-    .col {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
     }
 }
 
