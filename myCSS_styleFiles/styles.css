@@ -31,7 +31,7 @@ body {
 
 /* Banner Image Styling */
 .banner-img {
-    width: 150%; 
+    width: 110%; 
     height: 600px;
     object-fit: cover;
     display: block;
