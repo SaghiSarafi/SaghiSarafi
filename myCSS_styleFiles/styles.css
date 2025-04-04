@@ -4,7 +4,8 @@ body {
     background-color: #f8f9fa;
     color: #333;
     margin: 0;
-    padding-top: 56px; /* To avoid content being hidden under the fixed navbar */
+    padding-top: 56px;
+    /* To avoid content being hidden under the fixed navbar */
 }
 
 /* Navbar */
@@ -73,22 +74,32 @@ body {
     left: 0;
     width: 120%;
     height: 100%;
-    background: rgb(253, 253, 253); /* Adds a dark overlay */
+    background: rgb(253, 253, 253);
+    /* Adds a dark overlay */
     z-index: -1;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     #home h1 {
-        font-size: 2rem; /* Smaller font size on mobile */
+        font-size: 2rem;
+        /* Smaller font size on mobile */
     }
 
     #home p {
-        font-size: 1.1rem; /* Smaller paragraph text on mobile */
+        font-size: 1.1rem;
+        /* Smaller paragraph text on mobile */
     }
 
     .navbar-nav .nav-link {
         font-size: 1rem;
+    }
+
+    .container,
+    .row,
+    .col {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 }
 
