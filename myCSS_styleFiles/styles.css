@@ -29,6 +29,11 @@ body {
     color: #ffcc00 !important;
 }
 
+/* Navbar Layout Fix - Flexbox for alignment */
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+}
 
 /* Banner Image Styling */
 .banner-img {
@@ -46,7 +51,6 @@ body {
     padding-top: 0 !important;
     width: 100% !important;
 }
-
 
 /* Main Section (Hero Section) */
 #home {
@@ -99,6 +103,11 @@ body {
 
     .navbar-nav .nav-link {
         font-size: 1rem;
+    }
+
+    /* Ensure navbar items are stacked vertically on smaller screens */
+    .navbar-collapse {
+        display: block;
     }
 }
 
