@@ -31,12 +31,15 @@ body {
 
 /* Banner Image Styling */
 .banner-img {
-    width: 110%; 
-    height: 600px;
-    object-fit: cover;
+    width: 100%; /* Makes the image span the full width of the container */
+    height: 600px; /* Keep a fixed height */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border: none; /* Ensures no border */
     display: block;
-    margin-bottom: 20px;
+    margin: 0 auto; /* Centers the image */
+    box-shadow: none; /* Ensures no shadow effect */
 }
+
 
 /* Main Section (Hero Section) */
 #home {
