@@ -45,7 +45,7 @@ body {
 #home {
     position: relative;
     text-align: center;
-    color: #fff;
+    color: rgb(6, 6, 6);
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
 }
