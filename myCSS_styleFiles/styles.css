@@ -1,15 +1,14 @@
-/* === General Styling === */
-html, body {
-    margin: 0;
-    padding: 0;
+/* General Styling */
+body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #333;
-    overflow-x: hidden;
-    padding-top: 56px; /* Avoid content under fixed navbar */
+    margin: 0;
+    padding-top: 56px;
+    /* To avoid content being hidden under the fixed navbar */
 }
 
-/* === Navbar === */
+/* Navbar */
 .navbar {
     background: linear-gradient(to right, #343a40, #495057);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -31,7 +30,8 @@ html, body {
     color: #ffcc00 !important;
 }
 
-/* === Banner Image === */
+
+/* Banner Image Styling */
 .banner-img {
     width: 100vw;
     height: 600px;
@@ -39,15 +39,28 @@ html, body {
     margin: 0;
     padding: 0;
     border: none;
+    position: relative;
+}
+.container,
+.row {
+    margin: 0 !important;
+    padding-top: 0 !important;
+    width: 100% !important;
 }
 
-/* === Hero Section (Main Section) === */
+
+/* Main Section (Hero Section) */
 #home {
     position: relative;
     text-align: center;
-    color: #161414;
+    color: rgb(22, 20, 20);
     padding-top: 20px;
     font-family: 'Poppins', sans-serif;
+}
+.container {
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: 100% !important;
 }
 
 #home h1 {
@@ -62,33 +75,29 @@ html, body {
     font-weight: lighter;
 }
 
-/* === Overlay on Hero Section === */
-#home::before {
+/* Add a Gradient Overlay on Banner Image for Better Text Visibility */
+#home:before {
     content: '';
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 120%;
     height: 100%;
-    background: rgba(253, 253, 253, 0.5); /* semi-transparent white overlay */
+    background: rgb(253, 253, 253);
+    /* Adds a dark overlay */
     z-index: -1;
 }
 
-/* === Containers === */
-.container, .row {
-    margin: 0 !important;
-    padding: 0 !important;
-    max-width: 100% !important;
-}
-
-/* === Responsive Design === */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     #home h1 {
         font-size: 2rem;
+        /* Smaller font size on mobile */
     }
 
     #home p {
         font-size: 1.1rem;
+        /* Smaller paragraph text on mobile */
     }
 
     .navbar-nav .nav-link {
@@ -96,7 +105,7 @@ html, body {
     }
 }
 
-/* === Footer === */
+/* Footer Styling */
 footer {
     background-color: #343a40;
     color: white;
